@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="/submit" method="POST">
+        <label for="nombre_completo">Nombre Completo:</label>
+        <input type="text" id="nombre_completo" name="nombre_completo" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="numero_celular">Número Celular:</label>
+        <input type="text" id="numero_celular" name="numero_celular" required pattern="[3][0-9]{9}"><br><br>
+
+        <label for="estado_civil">Estado Civil:</label>
+        <select id="estado_civil" name="estado_civil">
+            <option value="Soltero">Soltero</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viudo">Viudo</option>
+            <option value="Union Libre">Unión Libre</option>
+        </select><br><br>
+
+        <label for="nivel_estudio">Nivel de Estudio:</label>
+        <select id="nivel_estudio" name="nivel_estudio">
+            <option value="Primaria">Primaria</option>
+            <option value="Secundaria">Secundaria</option>
+            <option value="Técnico">Técnico</option>
+            <option value="Tecnólogo">Tecnólogo</option>
+            <option value="Profesional">Profesional</option>
+            <option value="Postgrado">Postgrado</option>
+        </select><br><br>
+
+        <label for="perfil_laboral">Perfil Laboral:</label>
+        <select id="perfil_laboral" name="perfil_laboral">
+            <option value="Empleado">Empleado</option>
+            <option value="Independiente">Independiente</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Desempleado">Desempleado</option>
+            <option value="Otro">Otro</option>
+        </select><br><br>
+
+        <label for="convertido">Convertido:</label>
+        <select id="convertido" name="convertido">
+            <option value="Si">Sí</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <label for="bautizado">Bautizado:</label>
+        <select id="bautizado" name="bautizado">
+            <option value="Si">Sí</option>
+            <option value="No">No</option>
+        </select><br><br>
+
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>
